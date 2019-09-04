@@ -1,0 +1,30 @@
+{
+    "name": "merqueo/moviequotes",
+    "description": "This packages shows a random movie quote",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "orchestra/testbench": "^3.8.4",
+        "illuminate/support": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jhoyos",
+            "email": "jhoyos@merqueo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Merqueo\\MovieQuotes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Merqueo\\MovieQuotes\\Providers\\MovieQuotesServiceProvider"
+            ]
+        }
+    }
+}
